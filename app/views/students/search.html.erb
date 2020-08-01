@@ -1,0 +1,12 @@
+<h1>検索結果</h1>
+<table>
+  <% @students.each do |student| %>
+  <tr>
+    <td><%= student.name %></td>
+    <td><%= student.sex %></td>
+    <td><%= student.age %></td>
+    <td><%= student.department.name %></td>
+  </tr>
+  <% end %>
+  <%= link_to 'トップ', root_path %>
+</table>
